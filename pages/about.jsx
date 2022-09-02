@@ -1,6 +1,7 @@
-import Footer from '../components/Footer';
-import Heads from '../components/Heads';
-import Navbar from '../components/Navbar';
+/* eslint-disable import/no-unresolved */
+import Heads from '@c/Heads';
+import Footer from '@c/Footer';
+import Navbar from '@c/Navbar';
 import styles from '../styles/Home.module.css';
 
 export default function About() {

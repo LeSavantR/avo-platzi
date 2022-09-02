@@ -1,8 +1,31 @@
-import allData from './data';
+import { data } from './data';
 
-// Let's also add a delay to make it a bit closer to reality
-const randomDelay = () => {
-  // eslint-disable-next-line no-new
+class Database {
+  #name;
+  constructor (nom){
+    this.#name = nom
+  }
+  async getAll() {
+    const arrayObject = Object.values(data);
+    await randomDelay();
+    return arrayObject;
+  }
+
+  async getAvoId(id) {
+
+    if(!Object.prototype.hasOwnProperty.call(data, id)){
+      return null;
+    };
+
+    const entry = data[id];
+    await randomDelay();
+    return entry;
+  }
+}
+
+
+function randomDelay () {
+
   new Promise((resolve) => {
     const max = 350;
     const min = 100;
@@ -12,26 +35,4 @@ const randomDelay = () => {
   });
 };
 
-class Database {
-  // eslint-disable-next-line no-useless-constructor, no-empty-function
-  constructor() {}
-
-  // eslint-disable-next-line class-methods-use-this
-  async getAll() {
-    const asArray = Object.values(allData);
-    await randomDelay();
-    return asArray;
-  }
-
-  // eslint-disable-next-line class-methods-use-this
-  async getById(id) {
-    if (!Object.prototype.hasOwnProperty.call(allData, id)) {
-      return null;
-    }
-    const entry = allData[id];
-    await randomDelay();
-    return entry;
-  }
-}
-
-export default Database;
+export { Database };

@@ -1,7 +1,7 @@
 const data = {
-  '2zd33b8c': {
+  z2d33b8c: {
     name: 'Maluma Hass Avocado',
-    id: '2zd33b8c',
+    id: 'z2d33b8c',
     sku: 'NUR72KCM',
     price: 1.15,
     image: '/images/maluma.jpg',
@@ -13,9 +13,9 @@ const data = {
       taste: 'Catchy, is an avocado',
     },
   },
-  '6trfgkkj': {
+  t6rfgkkj: {
     name: 'Fuerte Avocado',
-    id: '6trfgkkj',
+    id: 't6rfgkkj',
     sku: 'AX4M8SJV',
     price: 1.21,
     image: '/images/fuerte.jpg',
@@ -27,9 +27,9 @@ const data = {
       taste: 'Magnificent, is a strong avocado',
     },
   },
-  '7bcr49em': {
+  b7cr49em: {
     name: 'Gwen Hass Avocado',
-    id: '7bcr49em',
+    id: 'b7cr49em',
     sku: 'HYA78F6J',
     price: 1.25,
     image: '/images/gwen.jpg',
@@ -41,9 +41,9 @@ const data = {
       taste: 'Superb, is an avocado',
     },
   },
-  '098323ks': {
+  ks098323: {
     name: 'Bacon Avocado',
-    id: '098323ks',
+    id: 'ks098323',
     sku: 'BXD100BLK',
     price: 1.51,
     image: '/images/bacon.jpg',
@@ -127,4 +127,4 @@ const data = {
   },
 };
 
-export default { data };
+export { data };

@@ -10,8 +10,8 @@ export default function About() {
       <main className={styles.main}>
         <Navbar />
         <h1>About Page!</h1>
+        <Footer />
       </main>
-      <Footer />
     </>
   );
 }
